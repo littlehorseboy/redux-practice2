@@ -25,6 +25,10 @@ const AddTodo = ({ dispatch }) => {
   );
 };
 
+AddTodo.propTypes = {
+  dispatch: PropTypes.func,
+};
+
 const connectAddTodo = connect()(AddTodo);
 
 export default connectAddTodo;
